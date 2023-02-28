@@ -1,0 +1,52 @@
+.image-gallery {
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+        color: $primary-color;
+    }
+
+    h5{
+        text-align: center;
+        // font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        font-weight: 200;
+        color: $primary-color;
+    }
+
+    .left, .right {
+        width: 47%;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    h3{
+        margin: 2rem;
+        font-weight: 200;
+        color: $primary-color;
+        margin-left: 0;
+    }
+
+    p{
+        margin-bottom: 2rem;
+        line-height: 1.5rem;
+        color: grey;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .image-gallery .flex-box {
+        display: block;
+    }
+
+    .image-gallery .left, .image-gallery .right{
+        width: 100%;
+    }
+
+    .more{
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,63 @@
+header {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../images/img-home.jpg");
+    background-size: cover;
+    text-align: center;
+    border-top: 10px solid $primary-color;
+
+    nav {
+        @include flex_property();
+
+        .logo {
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                margin-left: 2rem;
+            }
+        }
+
+
+        a {
+            color: $white-color;
+            text-decoration: none;
+            font-weight: 200;
+        }
+    }
+
+    .headings {
+        margin-top: 8rem;
+
+        h1 {
+            font-weight: 700;
+            font-size: 3rem;
+            color: $black-color;
+        }
+
+        h6 {
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: $black-color;
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    header .headings {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header nav ul {
+        margin-left: 50px;
+        margin-top: -17px;
+    }
+}
